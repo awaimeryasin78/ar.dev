@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alex Rivera — Developer & Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="Style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-text" id="loader-pct">0%</div>
+  <div class="loader-bar-track"><div class="loader-bar-fill" id="loader-fill"></div></div>
+</div>
+
+<!-- Scroll Progress -->
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a class="nav-logo" href="#hero" id="nav-logo">AR.dev</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact" id="nav-cta">Hire me</a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="hero-status">
+    <span class="status-dot"></span>
+    Available for new projects
+  </div>
+
+  <h1 class="hero-name">
+    <span class="hero-name-line">Alex</span>
+    <span class="hero-name-line teal">Rivera.</span>
+  </h1>
+
+  <p class="hero-role">
+    <span id="typed-role"></span>
+  </p>
+
+  <p class="hero-desc">
+    I build systems that scale — clean backends, fast frontends,
+    and the infrastructure to hold it all together.
+    Six years turning product ideas into shipped software.
+  </p>
+
+  <div class="hero-actions">
+    <a class="btn-primary" href="#projects">See my work</a>
+    <a class="btn-ghost" href="#contact">Let's talk</a>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    scroll to explore
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item">React</span>
+    <span class="marquee-item">Node.js</span>
+    <span class="marquee-item">TypeScript</span>
+    <span class="marquee-item">Python</span>
+    <span class="marquee-item">AWS</span>
+    <span class="marquee-item">PostgreSQL</span>
+    <span class="marquee-item">Docker</span>
+    <span class="marquee-item">Kubernetes</span>
+    <span class="marquee-item">GraphQL</span>
+    <span class="marquee-item">Redis</span>
+    <span class="marquee-item">Next.js</span>
+    <span class="marquee-item">FastAPI</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">React</span>
+    <span class="marquee-item">Node.js</span>
+    <span class="marquee-item">TypeScript</span>
+    <span class="marquee-item">Python</span>
+    <span class="marquee-item">AWS</span>
+    <span class="marquee-item">PostgreSQL</span>
+    <span class="marquee-item">Docker</span>
+    <span class="marquee-item">Kubernetes</span>
+    <span class="marquee-item">GraphQL</span>
+    <span class="marquee-item">Redis</span>
+    <span class="marquee-item">Next.js</span>
+    <span class="marquee-item">FastAPI</span>
+  </div>
+</div>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills" class="main-section">
+  <div class="s-header">
+    <div class="s-eyebrow">what I bring</div>
+    <h2 class="s-title">Skills &amp; <em>expertise</em></h2>
+  </div>
+
+  <div class="skills-wrapper">
+    <div>
+      <p class="skills-intro">
+        Six years across the full stack — from wiring up cloud infrastructure to sweating pixels on the front end. I care about the whole system, not just my lane.
+      </p>
+      <div class="skill-tags-row">
+        <span class="s-tag">TypeScript</span>
+        <span class="s-tag">Python</span>
+        <span class="s-tag">Go</span>
+        <span class="s-tag">SQL</span>
+        <span class="s-tag">Bash</span>
+        <span class="s-tag">GraphQL</span>
+        <span class="s-tag">REST</span>
+        <span class="s-tag">gRPC</span>
+        <span class="s-tag">Terraform</span>
+        <span class="s-tag">CI/CD</span>
+      </div>
+    </div>
+
+    <div class="skills-list">
+      <div class="skill-row" data-pct="92">
+        <span class="skill-row-name">React / Next.js</span>
+        <div class="skill-row-bar"><div class="skill-row-fill"></div></div>
+        <span class="skill-row-pct">92%</span>
+      </div>
+      <div class="skill-row" data-pct="88">
+        <span class="skill-row-name">Node.js / Express</span>
+        <div class="skill-row-bar"><div class="skill-row-fill"></div></div>
+        <span class="skill-row-pct">88%</span>
+      </div>
+      <div class="skill-row" data-pct="85">
+        <span class="skill-row-name">Python / FastAPI</span>
+        <div class="skill-row-bar"><div class="skill-row-fill"></div></div>
+        <span class="skill-row-pct">85%</span>
+      </div>
+      <div class="skill-row" data-pct="80">
+        <span class="skill-row-name">AWS / Cloud Infra</span>
+        <div class="skill-row-bar"><div class="skill-row-fill"></div></div>
+        <span class="skill-row-pct">80%</span>
+      </div>
+      <div class="skill-row" data-pct="83">
+        <span class="skill-row-name">PostgreSQL / Redis</span>
+        <div class="skill-row-bar"><div class="skill-row-fill"></div></div>
+        <span class="skill-row-pct">83%</span>
+      </div>
+      <div class="skill-row" data-pct="74">
+        <span class="skill-row-name">Docker / Kubernetes</span>
+        <div class="skill-row-bar"><div class="skill-row-fill"></div></div>
+        <span class="skill-row-pct">74%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects" class="main-section">
+  <div class="s-header">
+    <div class="s-eyebrow">selected work</div>
+    <h2 class="s-title">Things I've <em>built</em></h2>
+  </div>
+
+  <div class="projects-grid">
+    <div class="proj-card wide">
+      <div class="proj-thumb">
+        ⚡
+        <div class="proj-thumb-overlay"></div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-year">2024 — Featured</div>
+        <div class="proj-title">Voltflow — Real-time Energy Dashboard</div>
+        <p class="proj-desc">Production-grade dashboard ingesting 40k+ sensor events/min for an energy company. Streaming pipeline with WebSocket delivery and a React frontend that renders live charts without jank.</p>
+        <div class="proj-stack">
+          <span class="p-tag">Next.js</span>
+          <span class="p-tag">Kafka</span>
+          <span class="p-tag">Go</span>
+          <span class="p-tag">TimescaleDB</span>
+          <span class="p-tag">AWS EKS</span>
+        </div>
+        <div class="proj-links">
+          <a class="proj-link" href="#">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a class="proj-link" href="#">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb" style="font-size:2.5rem">🔐<div class="proj-thumb-overlay"></div></div>
+      <div class="proj-body">
+        <div class="proj-year">2024 — Open Source</div>
+        <div class="proj-title">AuthKit</div>
+        <p class="proj-desc">Drop-in auth library for Node backends. JWT rotation, RBAC, OAuth. 800+ stars on GitHub.</p>
+        <div class="proj-stack"><span class="p-tag">TypeScript</span><span class="p-tag">JWT</span><span class="p-tag">OAuth2</span></div>
+        <div class="proj-links"><a class="proj-link" href="#">GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb" style="font-size:2.5rem">🧠<div class="proj-thumb-overlay"></div></div>
+      <div class="proj-body">
+        <div class="proj-year">2023 — Client Work</div>
+        <div class="proj-title">DocuMind</div>
+        <p class="proj-desc">Internal document Q&A for a law firm. RAG pipeline over PDFs, daily by 50+ staff.</p>
+        <div class="proj-stack"><span class="p-tag">Python</span><span class="p-tag">LangChain</span><span class="p-tag">Pinecone</span></div>
+        <div class="proj-links"><a class="proj-link" href="#">Case study</a></div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb" style="font-size:2.5rem">📊<div class="proj-thumb-overlay"></div></div>
+      <div class="proj-body">
+        <div class="proj-year">2023 — Personal</div>
+        <div class="proj-title">DataPulse</div>
+        <p class="proj-desc">CLI tool for monitoring Postgres query performance. Detects slow queries and auto-suggests indexes.</p>
+        <div class="proj-stack"><span class="p-tag">Go</span><span class="p-tag">PostgreSQL</span><span class="p-tag">TUI</span></div>
+        <div class="proj-links"><a class="proj-link" href="#">GitHub</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience" class="main-section">
+  <div class="s-header">
+    <div class="s-eyebrow">career</div>
+    <h2 class="s-title">Where I've <em>worked</em></h2>
+  </div>
+
+  <div class="exp-grid">
+    <div class="exp-card">
+      <div class="exp-period">2022 — present</div>
+      <div class="exp-company-name">Meridian Labs</div>
+      <div class="exp-role-title">Senior Software Engineer</div>
+      <p class="exp-body">Led backend architecture for a B2B SaaS platform serving 200k users. Reduced API p95 latency from 800ms to 120ms and migrated a monolith to microservices.</p>
+      <div class="exp-chips">
+        <span class="exp-chip">Node.js</span><span class="exp-chip">PostgreSQL</span><span class="exp-chip">AWS</span><span class="exp-chip">Lead</span>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-period">2020 — 2022</div>
+      <div class="exp-company-name">Crestline Systems</div>
+      <div class="exp-role-title">Software Engineer</div>
+      <p class="exp-body">Owned the data pipeline for a real-time analytics product. Built an ETL system processing 10M+ events per day and a React dashboard used by 50+ enterprise clients.</p>
+      <div class="exp-chips">
+        <span class="exp-chip">React</span><span class="exp-chip">Python</span><span class="exp-chip">Kafka</span>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-period">2019 — 2020</div>
+      <div class="exp-company-name">Cloudnine (startup)</div>
+      <div class="exp-role-title">Junior Engineer</div>
+      <p class="exp-body">First engineering hire at seed-stage startup. Built the MVP from scratch — auth, billing, and a mobile-responsive frontend — within 4 months of joining.</p>
+      <div class="exp-chips">
+        <span class="exp-chip">Vue.js</span><span class="exp-chip">Rails</span><span class="exp-chip">Stripe</span>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-period">2018 — 2019</div>
+      <div class="exp-company-name">Freelance</div>
+      <div class="exp-role-title">Full-Stack Developer</div>
+      <p class="exp-body">Shipped e-commerce sites, booking systems, and internal tools for small businesses. First real contact with production deployments and client expectations.</p>
+      <div class="exp-chips">
+        <span class="exp-chip">WordPress</span><span class="exp-chip">PHP</span><span class="exp-chip">MySQL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="main-section">
+  <div class="contact-inner">
+    <div>
+      <h2 class="contact-big-text">Let's build<br><span>something</span><br>great.</h2>
+      <p class="contact-sub">Open to senior and staff-level roles, freelance contracts, and interesting open-source collaborations. I respond within 24 hours.</p>
+      <div class="contact-socials">
+        <a class="c-social" href="mailto:alex@example.com">
+          <div class="c-social-icon">✉</div>
+          alex@example.com
+        </a>
+        <a class="c-social" href="#">
+          <div class="c-social-icon">in</div>
+          linkedin.com/in/alexrivera
+        </a>
+        <a class="c-social" href="#">
+          <div class="c-social-icon">⊙</div>
+          github.com/alexrivera
+        </a>
+      </div>
+    </div>
+
+  <form class="contact-form" id="contact-form">
+      <div class="f-group">
+        <label class="f-label" for="name">name</label>
+        <input class="f-input" id="name" type="text" placeholder="Your name"/>
+      </div>
+      <div class="f-group">
+        <label class="f-label" for="email">email</label>
+        <input class="f-input" id="email" type="email" placeholder="you@company.com"/>
+      </div>
+      <div class="f-group">
+        <label class="f-label" for="msg">message</label>
+        <textarea class="f-textarea" id="msg" placeholder="Tell me about your project…"></textarea>
+      </div>
+      <button class="btn-primary" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+<script src="Script.js"></script>
+<footer>
+  <span>© 2026 Alex Rivera</span>
+  <span>Designed &amp; built from scratch</span>
+  <a href="#hero">Back to top ↑</a>
+</footer>
+
+</body>
+</html>
